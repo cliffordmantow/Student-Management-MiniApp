@@ -1,0 +1,36 @@
+.bg-purple{
+    background-color:rgb(91, 58, 153);
+}
+
+.btn-purple{
+    background-color: rgb(91, 58, 153);
+    color: white;
+    border: none;
+    height: 31px;
+    font-size: 15px;
+}
+
+.label-size{
+    font-size: 13px;
+}
+
+.border-shadow
+{
+    box-shadow: 1px 1px 1px blueviolet;
+}
+
+.input-size{
+    height: 30px;
+}
+
+.text-size-li{
+    font-size: 11px;
+}
+
+.text-size-logo{
+    font-size: 16px;
+}
+
+.text-size-jumbotron{
+    font-size: 40px;
+}
