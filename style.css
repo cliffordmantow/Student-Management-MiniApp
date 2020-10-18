@@ -2,6 +2,14 @@
     background-color:rgb(91, 58, 153);
 }
 
+.bg-orange{
+    background-color: #e86633;
+}
+
+.bg-green{
+    background-color: #119e40;
+}
+
 .btn-purple{
     background-color: rgb(91, 58, 153);
     color: white;
@@ -33,4 +41,14 @@
 
 .text-size-jumbotron{
     font-size: 40px;
+}
+
+#about-footer{
+    margin-top: 51vh;
+}
+
+ul li{
+    display: inline;
+    padding: 1px;
+
 }
