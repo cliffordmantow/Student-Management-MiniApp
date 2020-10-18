@@ -45,9 +45,9 @@
                         <!-- Add Student -->
                         <div class="col-sm-8 rounded">
                             <h5>Add Student</h5>
-                            <button class="btn btn-purple label-size" type="button">Show Form Add Student</button>
+                            <button id="button-show-hide" class="btn btn-purple label-size" type="button">Show Form Add New Student</button>
 
-                            <form>
+                            <form id="show-hide" style="display: none;">
                                 <!-- Input Textbox -->
                                 <div class="form-group">
                                 <label for="student-ID" class="mt-2 label-size">Student ID (NIM)</label>
@@ -74,16 +74,17 @@
                                 <!-- Group box -->
                                 <div class="form-group">
                                     <label for="student-faculty" class="label-size">Faculty</label>
-                                    <select class="form-control input-size" style="font-size: 13px;" id="studnt-faculty">
+                                    <select class="form-control input-size" style="font-size: 13px;" id="student-faculty">
                                         <option>-- SELECT FACULTY --</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="student-programStudy" class="label-size">Program of Study</label>
-                                    <select class="form-control" style="font-size: 13px;" id="student-programStudy">
+                                    <label for="student-program-study" class="label-size">Program of Study</label>
+                                    <select class="form-control" style="font-size: 13px;" id="student-program-study">
                                         <option>-- SELECT PROGRAM OF STUDY --</option>
                                     </select>
                                 </div>
+                                <button class="btn btn-block btn-purple label-size mt-2" type="button">Add Students</button>
                             </form>
                         </div>
                         
@@ -100,13 +101,11 @@
                                     </select>
                                     <button class="btn btn-block btn-purple label-size mt-2" type="button">Show Students</button>
                                 </div>
-                            </form>
-
-                            <form>
+                                
                                 <!-- Progam Of Study -->
                                 <div class="form-group">
-                                    <label for="filter-programStudy" class="label-size">Program of Study</label>
-                                    <select class="form-control" style="font-size: 13px;" id="filter-programStudy">
+                                    <label for="filter-program-study" class="label-size">Program of Study</label>
+                                    <select class="form-control" style="font-size: 13px;" id="filter-program-study">
                                         <option>-- SELECT PROGRAM OF STUDY --</option>
                                     </select>
                                     <button class="btn btn-block btn-purple label-size mt-2" type="button">Show Students</button>
@@ -117,7 +116,7 @@
                     
                     <div class="row">
                         <div class="col">
-                            <hr class="mt-0">
+                            <hr class="mt-4">
                             <h4 class="text-center mt-2">Our Students</h4>
                         </div>
                     </div>
@@ -146,8 +145,7 @@
                                 <td>Male</td>
                                 <td>Fakultas Ilmu Komputer</td>
                                 <td>Informatika</td>
-                                <td>-</td>
-
+                                <td></td>
                             </tr>
                             </tbody>
                         </table>
