@@ -47,26 +47,26 @@
                             <h5>Add Student</h5>
                             <button id="button-show-hide" class="btn btn-purple label-size" type="button">Show Form Add New Student</button>
 
-                            <form id="show-hide" style="display: none;">
+                            <form id="show-hide" style="display: none;" name="formInput">
                                 <!-- Input Textbox -->
                                 <div class="form-group">
-                                <label for="student-ID" class="mt-2 label-size">Student ID (NIM)</label>
-                                <input type="text" class="form-control input-size" id="student-ID" required>
+                                    <label for="student-ID" class="mt-2 label-size">Student ID (NIM)</label>
+                                    <input type="text" class="form-control input-size" id="student-ID" name="formNumber">
                                 </div>
                                 <div class="form-group">
-                                <label for="student-fullName" class="label-size">Full Name</label>
-                                <input type="text" class="form-control input-size" id="student-fullName" required>
+                                    <label for="student-fullName" class="label-size">Full Name</label>
+                                    <input type="text" class="form-control input-size" id="student-full-name" >
                                 </div>
                                 
                                 <!-- Radio -->
                                 <div class="form-group">
                                     <p class="mb-2 label-size">Gender</p>
                                     <div class="custom-control custom-radio">
-                                        <input type="radio" id="student-male" name="customRadio" class="custom-control-input">
+                                        <input type="radio" id="student-male" name="custom-radio" class="custom-control-input" value="Male" checked>
                                         <label class="custom-control-label label-size" for="student-male">Male</label>
                                     </div>
                                     <div class="custom-control custom-radio">
-                                        <input type="radio" id="student-female" name="customRadio" class="custom-control-input">
+                                        <input type="radio" id="student-female" name="custom-radio" class="custom-control-input" value="Female">
                                         <label class="custom-control-label label-size" for="student-female">Female</label>
                                     </div>
                                 </div>
@@ -84,7 +84,7 @@
                                         <option>-- SELECT PROGRAM OF STUDY --</option>
                                     </select>
                                 </div>
-                                <button class="btn btn-block btn-purple label-size mt-2" type="button">Add Students</button>
+                                <button id="button-add-student" class="btn btn-block btn-purple label-size mt-2" type="button">Add Students</button>
                             </form>
                         </div>
                         
@@ -99,7 +99,7 @@
                                     <select class="form-control input-size" style="font-size: 13px;" id="filter-faculty">
                                         <option>-- SELECT FACULTY --</option>
                                     </select>
-                                    <button class="btn btn-block btn-purple label-size mt-2" type="button">Show Students</button>
+                                    <button id="button-filter-faculty" class="btn btn-block btn-purple label-size mt-2" type="button">Show Students</button>
                                 </div>
                                 
                                 <!-- Progam Of Study -->
@@ -108,7 +108,7 @@
                                     <select class="form-control" style="font-size: 13px;" id="filter-program-study">
                                         <option>-- SELECT PROGRAM OF STUDY --</option>
                                     </select>
-                                    <button class="btn btn-block btn-purple label-size mt-2" type="button">Show Students</button>
+                                    <button id="button-filter-prodi" class="btn btn-block btn-purple label-size mt-2" type="button">Show Students</button>
                                 </div>
                             </form>
                         </div>     
@@ -122,7 +122,7 @@
                     </div>
 
                     <div class="form-group">
-                        <input type="text" class="form-control label-size" id="search-student" placeholder="Search student by name...">
+                        <input id="search-student-name" type="text" class="form-control label-size" placeholder="Search student by name...">
                     </div>
 
                     <div class="table-responsive label-size">
@@ -138,15 +138,15 @@
                                 </tr>
                             </thead>
 
-                            <tbody>
-                            <tr>
-                                <th scope="row">105021810058</th>
-                                <td>Clifford D. R. Mantow</td>
-                                <td>Male</td>
-                                <td>Fakultas Ilmu Komputer</td>
-                                <td>Informatika</td>
-                                <td></td>
-                            </tr>
+                            <tbody id="new-added">   
+                                <!-- <tr>
+                                    <td>105021810058</td>
+                                    <td>Clifford D. R. Mantow</td>
+                                    <td>Male</td>
+                                    <td>Fakultas Ilmu Komputer</td>
+                                    <td>Informatika</td>
+                                    <td></td>
+                                </tr> -->
                             </tbody>
                         </table>
                     </div>
