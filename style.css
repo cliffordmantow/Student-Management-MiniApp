@@ -22,11 +22,6 @@
     font-size: 13px;
 }
 
-.border-shadow
-{
-    box-shadow: 1px 1px 1px blueviolet;
-}
-
 .input-size{
     height: 30px;
 }
@@ -44,7 +39,7 @@
 }
 
 #about-footer{
-    margin-top: 51vh;
+    margin-top: 61vh;
 }
 
 ul li{
