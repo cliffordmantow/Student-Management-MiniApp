@@ -102,8 +102,8 @@ const listFakultas = document.querySelector('#student-faculty');
 
 for(dF of daftarFakultas)
 {
-	let tagFakultas = document.createElement('option');
-	let textFakultas = document.createTextNode(dF.fakultas);
+	const tagFakultas = document.createElement('option');
+	const textFakultas = document.createTextNode(dF.fakultas);
 	tagFakultas.appendChild(textFakultas);
 	listFakultas.appendChild(tagFakultas);
 }
@@ -130,8 +130,8 @@ listFakultas.addEventListener("click", (e) =>
 
     for(s of daftarFakultas[select].jurusan)
     {
-        let tagProdi = document.createElement('option');
-        let textProdi = document.createTextNode(s);    
+        const tagProdi = document.createElement('option');
+        const textProdi = document.createTextNode(s);    
 
         tagProdi.appendChild(textProdi);
         listProdi.appendChild(tagProdi);
